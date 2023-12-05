@@ -11,6 +11,18 @@
 		381746BE2A872A1B005E1612 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381746BD2A872A1B005E1612 /* ContentView.swift */; };
 		381746C02A872A1E005E1612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381746BF2A872A1E005E1612 /* Assets.xcassets */; };
 		381746C42A872A1E005E1612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381746C32A872A1E005E1612 /* Preview Assets.xcassets */; };
+		3846595C2A87305900C84602 /* SeedRamd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846595B2A87305900C84602 /* SeedRamd.swift */; };
+		384659602A87496C00C84602 /* PlatformImage+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846595F2A87496C00C84602 /* PlatformImage+SwiftUI.swift */; };
+		384659622A874ADD00C84602 /* TextWatermarkCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384659612A874ADD00C84602 /* TextWatermarkCanvas.swift */; };
+		38B6EB8F2A8A38A500B4ABC7 /* String+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6EB8E2A8A38A500B4ABC7 /* String+Identifiable.swift */; };
+		38B6EB952A8A38B100B4ABC7 /* BitReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6EB912A8A38B100B4ABC7 /* BitReader.swift */; };
+		38B6EB962A8A38B100B4ABC7 /* BitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6EB922A8A38B100B4ABC7 /* BitLoader.swift */; };
+		38B6EB972A8A38B100B4ABC7 /* Data+Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6EB932A8A38B100B4ABC7 /* Data+Bit.swift */; };
+		38B6EB982A8A38B100B4ABC7 /* Watermarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6EB942A8A38B100B4ABC7 /* Watermarker.swift */; };
+		38F1E5B62A872C5F00C70CEE /* ImageWatermarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1E5B52A872C5F00C70CEE /* ImageWatermarker.swift */; };
+		38F1E5B92A872C9C00C70CEE /* Empty+CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1E5B82A872C9C00C70CEE /* Empty+CGContext.swift */; };
+		38F1E5BB2A872CD900C70CEE /* Next2n+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1E5BA2A872CD900C70CEE /* Next2n+Int.swift */; };
+		38F1E5BF2A872D0A00C70CEE /* ResizeImage+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1E5BE2A872D0A00C70CEE /* ResizeImage+CGImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +32,18 @@
 		381746BF2A872A1E005E1612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		381746C12A872A1E005E1612 /* BlindWatermarkDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlindWatermarkDemo.entitlements; sourceTree = "<group>"; };
 		381746C32A872A1E005E1612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3846595B2A87305900C84602 /* SeedRamd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedRamd.swift; sourceTree = "<group>"; };
+		3846595F2A87496C00C84602 /* PlatformImage+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlatformImage+SwiftUI.swift"; sourceTree = "<group>"; };
+		384659612A874ADD00C84602 /* TextWatermarkCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWatermarkCanvas.swift; sourceTree = "<group>"; };
+		38B6EB8E2A8A38A500B4ABC7 /* String+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Identifiable.swift"; sourceTree = "<group>"; };
+		38B6EB912A8A38B100B4ABC7 /* BitReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitReader.swift; sourceTree = "<group>"; };
+		38B6EB922A8A38B100B4ABC7 /* BitLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitLoader.swift; sourceTree = "<group>"; };
+		38B6EB932A8A38B100B4ABC7 /* Data+Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Bit.swift"; sourceTree = "<group>"; };
+		38B6EB942A8A38B100B4ABC7 /* Watermarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watermarker.swift; sourceTree = "<group>"; };
+		38F1E5B52A872C5F00C70CEE /* ImageWatermarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWatermarker.swift; sourceTree = "<group>"; };
+		38F1E5B82A872C9C00C70CEE /* Empty+CGContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Empty+CGContext.swift"; sourceTree = "<group>"; };
+		38F1E5BA2A872CD900C70CEE /* Next2n+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Next2n+Int.swift"; sourceTree = "<group>"; };
+		38F1E5BE2A872D0A00C70CEE /* ResizeImage+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResizeImage+CGImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,11 @@
 			children = (
 				381746BB2A872A1B005E1612 /* BlindWatermarkDemoApp.swift */,
 				381746BD2A872A1B005E1612 /* ContentView.swift */,
+				384659612A874ADD00C84602 /* TextWatermarkCanvas.swift */,
+				38F1E5B52A872C5F00C70CEE /* ImageWatermarker.swift */,
+				3846595B2A87305900C84602 /* SeedRamd.swift */,
+				38B6EB8D2A8A388B00B4ABC7 /* Watermarker */,
+				38F1E5B72A872C6200C70CEE /* Extensions */,
 				381746BF2A872A1E005E1612 /* Assets.xcassets */,
 				381746C12A872A1E005E1612 /* BlindWatermarkDemo.entitlements */,
 				381746C22A872A1E005E1612 /* Preview Content */,
@@ -67,6 +96,37 @@
 				381746C32A872A1E005E1612 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38B6EB8D2A8A388B00B4ABC7 /* Watermarker */ = {
+			isa = PBXGroup;
+			children = (
+				38B6EB902A8A38B100B4ABC7 /* Bit */,
+				38B6EB942A8A38B100B4ABC7 /* Watermarker.swift */,
+			);
+			path = Watermarker;
+			sourceTree = "<group>";
+		};
+		38B6EB902A8A38B100B4ABC7 /* Bit */ = {
+			isa = PBXGroup;
+			children = (
+				38B6EB912A8A38B100B4ABC7 /* BitReader.swift */,
+				38B6EB922A8A38B100B4ABC7 /* BitLoader.swift */,
+				38B6EB932A8A38B100B4ABC7 /* Data+Bit.swift */,
+			);
+			path = Bit;
+			sourceTree = "<group>";
+		};
+		38F1E5B72A872C6200C70CEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38B6EB8E2A8A38A500B4ABC7 /* String+Identifiable.swift */,
+				38F1E5B82A872C9C00C70CEE /* Empty+CGContext.swift */,
+				38F1E5BA2A872CD900C70CEE /* Next2n+Int.swift */,
+				38F1E5BE2A872D0A00C70CEE /* ResizeImage+CGImage.swift */,
+				3846595F2A87496C00C84602 /* PlatformImage+SwiftUI.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +200,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				381746BE2A872A1B005E1612 /* ContentView.swift in Sources */,
+				384659622A874ADD00C84602 /* TextWatermarkCanvas.swift in Sources */,
+				38B6EB8F2A8A38A500B4ABC7 /* String+Identifiable.swift in Sources */,
+				38F1E5B92A872C9C00C70CEE /* Empty+CGContext.swift in Sources */,
+				38B6EB962A8A38B100B4ABC7 /* BitLoader.swift in Sources */,
+				38F1E5B62A872C5F00C70CEE /* ImageWatermarker.swift in Sources */,
+				38B6EB972A8A38B100B4ABC7 /* Data+Bit.swift in Sources */,
+				38F1E5BF2A872D0A00C70CEE /* ResizeImage+CGImage.swift in Sources */,
+				38B6EB952A8A38B100B4ABC7 /* BitReader.swift in Sources */,
+				38B6EB982A8A38B100B4ABC7 /* Watermarker.swift in Sources */,
+				384659602A87496C00C84602 /* PlatformImage+SwiftUI.swift in Sources */,
+				3846595C2A87305900C84602 /* SeedRamd.swift in Sources */,
 				381746BC2A872A1B005E1612 /* BlindWatermarkDemoApp.swift in Sources */,
+				38F1E5BB2A872CD900C70CEE /* Next2n+Int.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlindWatermarkDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = CJ9X49H2WL;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -309,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlindWatermarkDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = CJ9X49H2WL;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
