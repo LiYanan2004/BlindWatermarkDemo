@@ -61,7 +61,7 @@ struct ContentView: View {
                             .overlay {
                                 Image(platformImage: watermarkedImage)
                                     .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                    .aspectRatio(contentMode: .fill)
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     } else {
