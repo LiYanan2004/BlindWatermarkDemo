@@ -42,8 +42,6 @@ class ImageWatermarker {
         let matrix = encodeWatermark(watermark, seed: 1024)
         
         // Mix watermark matrixes into 3 channels, namely RGB.
-        // Tested on macOS Sonoma beta, but in the final stable release, there is a crash.
-        // Still investigating...
         vDSP.add(multiplication: (matrix, alpha), multiplication: (r, 1), result: &r)
         vDSP.add(multiplication: (matrix, alpha), multiplication: (g, 1), result: &g)
         vDSP.add(multiplication: (matrix, alpha), multiplication: (b, 1), result: &b)
@@ -179,21 +177,21 @@ extension ImageWatermarker {
 
 extension ImageWatermarker {
     private func encodeWatermark(_ watermarkImage: CGImage, seed: UInt64) -> [Double] {
-        assert(watermarkImage.width <= originalWidth, "The width of watermark image must be smaller than the original's.")
-        assert(watermarkImage.height / 2 <= originalWidth, "The half height of watermark image must be smaller than the original's.")
-        var matrix = [Double](repeating: 0, count: originalWidth * originalHeight)
-        var order = [Int](repeating: 0, count: originalWidth * originalHeight / 2)
-        var random = [Int](repeating: 0, count: originalWidth * originalHeight / 2)
+        assert(watermarkImage.width <= width, "The width of watermark image must be smaller than the original's.")
+        assert(watermarkImage.height / 2 <= height, "The half height of watermark image must be smaller than the original's.")
+        var matrix = [Double](repeating: 0, count: width * height)
+        var order = [Int](repeating: 0, count: width * height / 2)
+        var random = [Int](repeating: 0, count: width * height / 2)
         
-        for i in 0..<originalWidth * originalHeight / 2 {
+        for i in 0..<width * height / 2 {
             order[i] = i
         }
         
         var randomGenerator = SeedRamd(seed: seed)
-        var count = originalWidth * originalHeight / 2
+        var count = width * height / 2
         while count > 0 {
             let index = Int.random(in: 0 ..< Int.max, using: &randomGenerator) % count
-            random[originalWidth * originalHeight / 2 - count] = order[index]
+            random[width * height / 2 - count] = order[index]
             order[index] = order[count - 1]
             count -= 1
         }
@@ -210,8 +208,8 @@ extension ImageWatermarker {
                 let b = Int((buf[pos] >>  8) & 0xff)
                 let adjustedRgb = 255.0 - Double(r + g + b) / 3.0
                 
-                matrix[random[y * originalWidth + x]] = adjustedRgb
-                matrix[originalWidth * originalHeight - random[y * originalWidth + x] - 1] = adjustedRgb
+                matrix[random[y * width + x]] = adjustedRgb
+                matrix[width * height - random[y * width + x] - 1] = adjustedRgb
             }
         }
         
