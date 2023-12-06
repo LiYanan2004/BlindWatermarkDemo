@@ -42,6 +42,8 @@ class ImageWatermarker {
         let matrix = encodeWatermark(watermark, seed: 1024)
         
         // Mix watermark matrixes into 3 channels, namely RGB.
+        // Tested on macOS Sonoma beta, but in the final stable release, there is a crash.
+        // Still investigating...
         vDSP.add(multiplication: (matrix, alpha), multiplication: (r, 1), result: &r)
         vDSP.add(multiplication: (matrix, alpha), multiplication: (g, 1), result: &g)
         vDSP.add(multiplication: (matrix, alpha), multiplication: (b, 1), result: &b)
